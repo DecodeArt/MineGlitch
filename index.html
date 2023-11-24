@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineGlitch Server status</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --ip: '25.25.56';
+            --port: '2225';
+            --of: 'Online';
+        }
+        html {
+            background-color: rgb(30, 32, 46);
+            margin: 0;
+        }
+        @font-face {
+        font-family: "My Custom Font";
+        src: url(MinecrafterAlt.ttf) format("truetype");
+        }
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            color: rgba(245, 245, 245, 0.823);
+        }
+        .image{
+            /* background-color: #fff; */
+            text-align: center;
+            z-index: 5;
+            /* background-color: rgba(255, 255, 255, 0); */
+        }
+        .image p{
+            /* display: flexbox; */
+            color: white;
+            font-family: "My Custom Font";
+            font-weight: 100;
+            /* font-weight: bolder; */
+            word-spacing: -0.3em;
+            font-size: 700%;
+            margin: 0;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+            z-index: 5;
+           /* transform: translateY(-27%); */
+            /* z-index */
+            /* background-color: #fff; */
+        }
+        .wrapper {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: -1;
+          transform: translateY(-100%) ;
+        }
+        .wrapper h1.glitch {
+            /* z-index: -1; */
+          color: white;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-weight: 800;
+          position: relative;
+          font-size: 2.625em;
+          padding: 30px;
+        }
+        .wrapper h1.glitch::before, .wrapper h1.glitch::after {
+          padding: 30px;
+          /* z-index: -1; */
+          color: white;
+          content: "Minecraft server";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgb(30, 32, 46);
+          overflow: hidden;
+          top: 0;
+        }
+        .wrapper h1.glitch::before {
+          left: 3px;
+          text-shadow: -2px 0 red;
+          animation-name: glitch-animation-1;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: reverse-alternate;
+        }
+        .wrapper h1.glitch::after {
+          left: -3px;
+          text-shadow: -2px 0 blue;
+          animation-name: glitch-animation-2;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: reverse-alternate;
+        }
+
+        @keyframes glitch-animation-1 {
+  0% {
+    clip: rect(46px, 350px, 12px, 30px);
+  }
+  5% {
+    clip: rect(38px, 350px, 109px, 30px);
+  }
+  10% {
+    clip: rect(59px, 350px, 97px, 30px);
+  }
+  15% {
+    clip: rect(30px, 350px, 95px, 30px);
+  }
+  20% {
+    clip: rect(146px, 350px, 24px, 30px);
+  }
+  25% {
+    clip: rect(129px, 350px, 123px, 30px);
+  }
+  30% {
+    clip: rect(57px, 350px, 110px, 30px);
+  }
+  35% {
+    clip: rect(43px, 350px, 68px, 30px);
+  }
+  40% {
+    clip: rect(22px, 350px, 70px, 30px);
+  }
+  45% {
+    clip: rect(34px, 350px, 103px, 30px);
+  }
+  50% {
+    clip: rect(117px, 350px, 1px, 30px);
+  }
+  55% {
+    clip: rect(74px, 350px, 82px, 30px);
+  }
+  60% {
+    clip: rect(32px, 350px, 19px, 30px);
+  }
+  65% {
+    clip: rect(105px, 350px, 8px, 30px);
+  }
+  70% {
+    clip: rect(147px, 350px, 48px, 30px);
+  }
+  75% {
+    clip: rect(44px, 350px, 44px, 30px);
+  }
+  80% {
+    clip: rect(46px, 350px, 38px, 30px);
+  }
+  85% {
+    clip: rect(146px, 350px, 100px, 30px);
+  }
+  90% {
+    clip: rect(97px, 350px, 80px, 30px);
+  }
+  95% {
+    clip: rect(38px, 350px, 73px, 30px);
+  }
+  100% {
+    clip: rect(137px, 350px, 89px, 30px);
+  }
+        }
+        @keyframes glitch-animation-2 {
+  0% {
+    clip: rect(68px, 350px, 37px, 30px);
+  }
+  5% {
+    clip: rect(26px, 350px, 39px, 30px);
+  }
+  10% {
+    clip: rect(50px, 350px, 116px, 30px);
+  }
+  15% {
+    clip: rect(41px, 350px, 53px, 30px);
+  }
+  20% {
+    clip: rect(16px, 350px, 73px, 30px);
+  }
+  25% {
+    clip: rect(132px, 350px, 50px, 30px);
+  }
+  30% {
+    clip: rect(33px, 350px, 61px, 30px);
+  }
+  35% {
+    clip: rect(120px, 350px, 20px, 30px);
+  }
+  40% {
+    clip: rect(119px, 350px, 54px, 30px);
+  }
+  45% {
+    clip: rect(91px, 350px, 88px, 30px);
+  }
+  50% {
+    clip: rect(81px, 350px, 92px, 30px);
+  }
+  55% {
+    clip: rect(63px, 350px, 31px, 30px);
+  }
+  60% {
+    clip: rect(110px, 350px, 119px, 30px);
+  }
+  65% {
+    clip: rect(12px, 350px, 84px, 30px);
+  }
+  70% {
+    clip: rect(60px, 350px, 29px, 30px);
+  }
+  75% {
+    clip: rect(137px, 350px, 114px, 30px);
+  }
+  80% {
+    clip: rect(92px, 350px, 79px, 30px);
+  }
+  85% {
+    clip: rect(87px, 350px, 2px, 30px);
+  }
+  90% {
+    clip: rect(60px, 350px, 48px, 30px);
+  }
+  95% {
+    clip: rect(150px, 350px, 91px, 30px);
+  }
+  100% {
+    clip: rect(33px, 350px, 133px, 30px);
+  }
+        }
+        .Flexing{
+            margin: 1em;
+        }
+        .box{
+            color: whitesmoke;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* background-color: #fff; */
+            border-width: 0.1em;
+            border-style: solid;
+            border-radius: 0.5em;
+            padding: 0.8em;
+            /* display: flex; */
+            border-color: rgb(190, 127, 12);
+            background-color: rgb(30, 32, 46);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.462);
+            width: 100em;
+            margin: 0.4em;
+            height: 10em;
+            transform: translateY(-1em);
+            font-size: 2.3em;
+            
+        }
+        .box h3{
+            padding: 0;
+            margin:0;
+        }
+        .Flexing{
+            display: flex;
+            flex-direction: row;
+        }
+        .headnote{
+            margin: 1em;
+        }
+        .org{
+            color: orange;
+        }
+        .bl{
+            font-weight: 800;
+        }
+        .normal{
+            font-size: 1em;
+            font-weight: 100;
+        }
+        .n{
+            font-weight: 100;
+            font-size: 0.8em;
+            color: rgba(245, 245, 245, 0.823);
+            transform: translatey(0.5em);
+        }
+        .ip{
+            font-weight: 100;
+            font-size: 1em;
+            color: rgb(255, 247, 137)
+        }
+        .ip::before{
+            color: white;
+            content: var(--ip);
+            /* width: 5em; */
+            display: inline-block;
+        }
+        .center{
+            text-align: center;
+        }
+        .port::before{
+            color: white;
+            content: var(--port);
+            /* width: 5em; */
+            display: inline-block;
+        }
+        .of::before {
+            color: white;
+            content: var(--of);
+            /* width: 5em; */
+            font-size: 0.8em;
+            display: inline-block;
+        }
+        .end{
+            width: auto;
+            height: auto;
+            margin: 0.75em;
+        }
+        ul{
+            display: block;
+            position: relative;
+            margin-left: 1.5em;
+        }
+        .enjoy{
+            font-family: "My Custom Font";
+            color: whitesmoke;
+            font-size: 8em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            text-align: center;
+            font-weight: 100;
+        }
+        @media only screen and (max-width: 814px) {
+            .Flexing{
+            display: flex;
+            flex-direction: column;
+        } 
+        .headnote{
+            text-align: center;
+        }
+            .box{
+                width: auto;
+                margin: 0.2em;
+                height: auto;
+            }
+            .enjoy{
+                font-size: 6em;
+            }
+            .image{
+                font-size: 2.5vw;
+            }
+            .wrapper{
+                font-size: ;
+                transform: translateY(-80%);
+            }
+            .end{
+            margin: 0.5em;
+        }
+        .wrapper h1.glitch {
+            /* z-index: -1; */
+          color: white;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-weight: 800;
+          position: relative;
+          font-size: 7.5vw;
+          padding: 30px;
+        }
+        .box{
+            padding-bottom: 2em;
+        }
+    }
+    @media only screen and (max-width: 400px){
+        .wrapper{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 380px){
+        .headnote{
+            display: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <p class="headnote">[ A safe Minecraft server made for everyone ]</p>
+    <div class="image">
+        <p>Mine <span class="org">Glitch</span></p>
+    </div>
+
+    <div class="wrapper">
+        <h1 class="glitch">Minecraft server</h1>
+    </div>
+    <div class="Flexing">
+        <div class="box">
+            <h3 class="center">JOIN:</h3>
+            <!-- <hr color="orange"> -->
+            <p>
+            <br>
+            <span class="normal">Java:</span>
+            <p class="n">&#160 &#160 IP: 
+            <span class="ip"></span><span>:</span><span class="port"></span>
+            </p>
+            <br>
+            <span class="normal">Bedrock:</span>
+            <p class="n">&#160 &#160 IP: 
+            <span class="ip"></span>
+            </p>
+            <p class="n">&#160 &#160 Port: 
+                <span class="port"></span>
+                </p>
+            </p>
+        </div>
+        <div class="box">
+            <h3 class="center" class="bl">DETAILS:</h3>
+            <br>
+            <span class="n">Server-Status:</span>
+            <span class="of"></span>
+            <br>
+            <span class="n">Max-Player:</span>
+            <span class="n" style="color: rgb(79, 255, 79);">20</span>
+            <br>
+            <span class="n">Server-Owner:</span>
+            <span class="n" style="color: rgb(79, 255, 79);">AdrDev</span>
+            <br>
+            <span class="n">Released-In:</span>
+            <span class="n" style="color: rgb(79, 255, 79);">2023</span>
+            <br>
+            <span class="n">Cheats:</span>
+            <span class="n" style="color: rgb(79, 255, 79);">Disabled</span>
+            <br>
+            <span class="n">Main-Server:</span>
+            <span class="n" style="color: rgb(79, 255, 79);">Java</span>
+
+        </div>
+    </div>
+    <div class="end box">
+        <h3>Note:</h3>
+        <ul class="n">
+        <li>
+            <span>
+                U can only join the server in minecraft bedrock/java version 1.20.2 or above.
+            </span>
+        </li>
+            <br>
+        <li>
+            <span>
+                The main server is a Java server, that means u will get same or a little better fps if u join from Minecraft java then Minecraft java's Singleplayer World but if u join with minecraft bedrock version then u will get less fps then minecraft bedrock's Singleplayer.
+            </span>
+        </li>
+        </ul>
+        <br>
+    </div>  
+    <div><h1 class="enjoy">Enjoy</h1></div>  
+</body>
+</html>
