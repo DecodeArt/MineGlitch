@@ -10,12 +10,12 @@
             margin: 0;
         }
         :root{
-            --ip: '3.6.115.182';
-            --port: '10505';
+            --ip: '25.25.56';
+            --port: '2225';
             --of: 'Online';
         }
         html {
-            background-color: rgb(30, 32, 46);
+            background-color: rgb(15, 16, 21);
             margin: 0;
         }
         @font-face {
@@ -28,35 +28,76 @@
             color: rgba(245, 245, 245, 0.823);
         }
         .image{
-            /* background-color: #fff; */
-            text-align: center;
-            z-index: 5;
-            /* background-color: rgba(255, 255, 255, 0); */
+          /* background-color: #fff; */
+          /* text-align: center; */
+          z-index: 5;
+          width: 50%;
+          display: flex;
+          height: 95vh;
+          align-items: center;
+          /* background-color: rgba(255, 255, 255, 0); */
         }
         .image p{
-            /* display: flexbox; */
-            color: white;
-            font-family: "My Custom Font";
-            font-weight: 100;
-            /* font-weight: bolder; */
-            word-spacing: -0.3em;
-            font-size: 700%;
-            margin: 0;
-            margin-top: 0.7em;
-            margin-bottom: 0.7em;
-            z-index: 5;
-           /* transform: translateY(-27%); */
-            /* z-index */
-            /* background-color: #fff; */
+          color: white;
+          font-family: "My Custom Font";
+          font-weight: 100;
+          /* font-weight: bolder; */
+          word-spacing: -0.3em;
+          font-size: 15vw;
+          margin: 0;
+          margin-left: 12vh;
+          /* margin-top: 22%; */
+          /* transform: translateY(-50%); */
+          /* margin-bottom: 0.7em; */
+          z-index: 5;
+          /* transform: translateY(-27%); */
+          /* background-color: #fff; */
+        }
+        .bg{
+          display: block;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          position: fixed;
+          width: 100vw;
+          height: 100vh;
+          background-image: url("Minecraft-Wallpapers-1.jpg");
+          z-index: -5;
+          transform: translateY(-1em);
+          /* filter: blur(5px); */
+          filter: contrast(1.1);
+          background-size: 257vh;
+          background-position-x: 0vh;
+          filter: brightness(1.5);
+        }
+        .bgc {
+          display: block;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          position: absolute;
+          width: calc(100vw - 1em);
+          height: calc(100vh + 1em);
+          background-image: linear-gradient(90deg, rgb(23 26 28), rgb(0 0 0 / 66%),rgba(0, 0, 0, 0));
+          z-index: -5;
+          /* background-image: url("Minecraft-Wallpapers-1.jpg"); */
+          /* width: 50vw; */
+          transform: translateY(-1em);
+          /* filter: blur(6px); */
+          /* opacity: 30%; */
+          /* filter: contrast(1.05); */
         }
         .wrapper {
-          width: 100%;
+          width: 100vw;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          z-index: -1;
-          transform: translateY(-100%) ;
+          margin-top: 1em ;
+          margin-bottom: 1em ;
+
+          /* z-index: -1; */
+          /* transform: translateY(-100%) ; */
         }
         .wrapper h1.glitch {
             /* z-index: -1; */
@@ -75,7 +116,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background: rgb(30, 32, 46);
+          background: rgb(22, 23, 31);
           overflow: hidden;
           top: 0;
         }
@@ -231,34 +272,53 @@
   }
         }
         .Flexing{
-            margin: 1em;
+            /* margin: 0.5em; */
+            box-shadow: 0px 0px 30px rgb(0, 0, 0);
+            margin-top: -2vh;
+            padding-left: 2em ;
+            padding-right: 2em ;
+            flex-wrap: wrap;
+            padding-bottom: 1em ;
+            padding-top: 1em ;
+            /* width: 100vw; */
+            background-color: rgb(22, 23, 31);
+            /* backdrop-filter: blur(1em); */
         }
         .box{
+            flex-grow: 1;
+            flex-basis: 200px;
             color: whitesmoke;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             /* background-color: #fff; */
-            border-width: 0.1em;
-            border-style: solid;
-            border-radius: 0.5em;
+            /* border-width: 0.04em; */
+            /* border-style: solid; */
+            /* border-radius: 0.5em; */
             padding: 0.8em;
             /* display: flex; */
-            border-color: rgb(190, 127, 12);
-            background-color: rgb(30, 32, 46);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.462);
+            /* border-color: rgb(190, 127, 12); */
+            background-color: rgb(22, 23, 31);
+            /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.462); */
             width: 100em;
-            margin: 0.4em;
-            height: 10em;
-            transform: translateY(-1em);
+            /* margin: 0.4em;*/
+            /* height: 10em; */
+            /* transform: translateY(-1em); */
+            /* margin-top: 1em; */
             font-size: 2.3em;
             
         }
         .box h3{
             padding: 0;
             margin:0;
+            font-size: 0.7em;
+            font-weight: 800;
+            margin-bottom: 0.28em;
         }
         .Flexing{
             display: flex;
             flex-direction: row;
+            box-shadow: 0 0 30 black;
+            z-index: 5;
+            
         }
         .headnote{
             margin: 1em;
@@ -270,14 +330,14 @@
             font-weight: 800;
         }
         .normal{
-            font-size: 1em;
+            font-size: 0.69em;
             font-weight: 100;
         }
         .n{
             font-weight: 100;
-            font-size: 0.8em;
+            font-size: 0.65em;
             color: rgba(245, 245, 245, 0.823);
-            transform: translatey(0.5em);
+            /* transform: translatey(0.5em); */
         }
         .ip{
             font-weight: 100;
@@ -290,9 +350,6 @@
             /* width: 5em; */
             display: inline-block;
         }
-        .center{
-            text-align: center;
-        }
         .port::before{
             color: white;
             content: var(--port);
@@ -303,13 +360,14 @@
             color: white;
             content: var(--of);
             /* width: 5em; */
-            font-size: 0.8em;
+            font-size: 0.65em;
             display: inline-block;
         }
         .end{
             width: auto;
             height: auto;
-            margin: 0.75em;
+            flex-grow: 3.5;
+            /* margin: 0.75em; */
         }
         ul{
             display: block;
@@ -317,39 +375,101 @@
             margin-left: 1.5em;
         }
         .enjoy{
+          position: relative;
+          /* z-index: ; */
             font-family: "My Custom Font";
-            color: whitesmoke;
+            color: rgb(255, 255, 255);
             font-size: 8em;
-            margin-top: 2em;
-            margin-bottom: 2em;
+            /* margin-top: 1em; */
+            background-color: rgba(11, 18, 26, 0.945);
+            /* margin-bottom: 1em; */
+            padding: 1em;
             text-align: center;
             font-weight: 100;
+            /* text-shadow: 0px 0px 2em black; */
+            /* text-shadow: 0px 0px 2em black; */
+            /* text-shadow: 0px 0px 1.5em black, 0px 0px 1.5em black, 0px 0px 1.5em black, 0px 0px 1.5em black, 0px 0px 1.5em black, 0px 0px 1.5em black; */
+            z-index: -1;
+            /* backdrop-filter: blur(1em); */
         }
-        @media only screen and (max-width: 814px) {
-            .Flexing{
-            display: flex;
-            flex-direction: column;
-        } 
-        .headnote{
+        .margin-top{
+            margin-top: 1em;
+        }
+        @media only screen and (max-width: 855px){
+          .bg{
+          display: block;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          position: fixed;
+          width: 100vw;
+          height: calc(100vh + 1em);
+          background-image: url("Minecraft-Wallpapers-1.jpg");
+          z-index: -5;
+          transform: translateY(-1em);
+          /* filter: blur(5px); */
+          filter: contrast(1.1);
+          background-size: 200vh;
+          background-position-x: 21%;
+          filter: brightness(1.5);
+        }
+        .bgc{
+          width: 100vw;
+        }
+        .enjoy{
+          font-size: 20vw;
+          padding: 0;
+          padding-top: 15vh;
+          padding-bottom: 10vh;
+          letter-spacing: 1vw;
+        }
+        }
+        @media only screen and (max-width: 855px){
+          .headnote{
+            position: absolute;
+          }
+          .image{
             text-align: center;
+            width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+            /* font-size: 3vw; */
+            /* width: 100%; */
+            height: calc(100vh + 1em);
+            display: flex;
+            align-items: center;
+          }
+          .image p{
+          color: white;
+          display: block;
+          font-family: "My Custom Font";
+          font-weight: 100;
+          /* font-weight: bolder; */
+          word-spacing: -0.3em;
+          font-size: 20vw;
+          margin: 0;
+          margin-left: 0;
+          /* margin-top: auto; */
+          /* transform: translateY(-50%); */
+          /* margin-bottom: auto; */
+          z-index: 5;
+          /* transform: translateY(-27%); */
+          /* background-color: #fff; */
         }
-            .box{
-                width: auto;
-                margin: 0.2em;
-                height: auto;
-            }
-            .enjoy{
-                font-size: 6em;
-            }
-            .image{
-                font-size: 2.5vw;
-            }
-            .wrapper{
-                font-size: ;
-                transform: translateY(-80%);
-            }
-            .end{
-            margin: 0.5em;
+        .bgc{
+          /* display: none; */
+          background-image: none;
+          height: calc(100vh + 2em);
+          background-color: rgba(0, 0, 0, 0.719);
+        }
+        .Flexing{
+          margin-top: 0vh;
+        }
+      }
+      @media only screen and (max-width: 710px){
+        .bg{
+          background-repeat: no-repeat;
+          background-size: 200vh;
         }
         .wrapper h1.glitch {
             /* z-index: -1; */
@@ -357,94 +477,100 @@
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
           font-weight: 800;
           position: relative;
-          font-size: 7.5vw;
+          font-size: 9vw;
           padding: 30px;
         }
-        .box{
-            padding-bottom: 2em;
+      }
+      @media only screen and (max-width: 675px){
+        .image p{
+          font-size: 23vw;
         }
-    }
-    @media only screen and (max-width: 400px){
         .wrapper{
-            display: none;
+          display: none;
         }
-    }
-    @media only screen and (max-width: 380px){
-        .headnote{
-            display: none;
-        }
-    }
+      }
+      @media only screen and (max-width: 465px){
+
+      }
+        
+      
+
     </style>
 </head>
 <body>
+  <div class="bg"></div>
+  <div class="bgc"></div>
     <p class="headnote">[ A safe Minecraft server made for everyone ]</p>
     <div class="image">
         <p>Mine <span class="org">Glitch</span></p>
     </div>
-
-    <div class="wrapper">
-        <h1 class="glitch">Minecraft server</h1>
-    </div>
-    <div class="Flexing">
+    <div class="Flexing" style="line-height: 1.7em; padding-bottom: 4em;">
+      <div class="wrapper">
+          <h1 class="glitch">Minecraft server</h1>
+      </div>
         <div class="box">
-            <h3 class="center">JOIN:</h3>
+            <h3 style="line-height: 1em">JOIN:</h3>
             <!-- <hr color="orange"> -->
             <p>
-            <br>
-            <span class="normal">Java:</span>
-            <p class="n">&#160 &#160 IP: 
+              <hr style="line-height: 1em">
+              <!-- <br style="line-height: 0.2em"> -->
+              <!-- <div class="spacing" style="display: inline-block; box-sizing: border-box; height: 0.1em; overflow: hidden; width: 100%;"></div> -->
+            <span class="normal" class="margin-top" style="display: inline-block; margin-top: 0.5em ">Java:</span>
+            <p class="n">&#160 &bull; IP: 
             <span class="ip"></span><span>:</span><span class="port"></span>
             </p>
-            <br>
-            <span class="normal">Bedrock:</span>
-            <p class="n">&#160 &#160 IP: 
+            <p>
+              <br>
+            <span class="normal" style="color: whitesmoke;">Bedrock:</span>
+            <p class="n">&#160 &bull; IP: 
             <span class="ip"></span>
             </p>
-            <p class="n">&#160 &#160 Port: 
+            <p class="n">&#160 &bull; Port: 
                 <span class="port"></span>
                 </p>
             </p>
         </div>
-        <div class="box">
-            <h3 class="center" class="bl">DETAILS:</h3>
-            <br>
-            <span class="n">Server-Status:</span>
+        <div class="box" style="border-left: none;">
+            <h3 style="line-height: 1em">DETAILS:</h3>
+            <hr style="line-height: 1em">
+            <!-- <div class="spacing" style="display: inline-block; box-sizing: border-box; height: 0.1em; overflow: hidden; width: 100%;"></div> -->
+            <span class="n" style="display: inline-block; margin-top: 0.5em ">&bull; Server-Status:</span>
             <span class="of"></span>
             <br>
-            <span class="n">Max-Player:</span>
+            <span class="n">&bull; Max-Player:</span>
             <span class="n" style="color: rgb(79, 255, 79);">20</span>
             <br>
-            <span class="n">Server-Owner:</span>
+            <span class="n">&bull; Server-Owner:</span>
             <span class="n" style="color: rgb(79, 255, 79);">AdrDev</span>
             <br>
-            <span class="n">Released-In:</span>
+            <span class="n">&bull; Released-In:</span>
             <span class="n" style="color: rgb(79, 255, 79);">2023</span>
             <br>
-            <span class="n">Cheats:</span>
+            <span class="n">&bull; Cheats:</span>
             <span class="n" style="color: rgb(79, 255, 79);">Disabled</span>
             <br>
-            <span class="n">Main-Server:</span>
+            <span class="n">&bull; Main-Server:</span>
             <span class="n" style="color: rgb(79, 255, 79);">Java</span>
 
         </div>
+        <div class="end box" style="line-height: 0.3em">
+          <h3 style="line-height: 1em">Note:</h3>
+          <hr style="line-height: 1em">
+          <br style="line-height: 0.6em">
+          
+              <span class="n" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 0.65em;line-height: 1em;">
+                  &bull; U can only join the server in minecraft bedrock/java version 1.20.2 or above.
+              </span>
+          
+              <br>
+              <br>
+              <span class="n" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 0.65em;line-height: 1.2em;">
+                &bull; The main server is a Java server, that means u will get same or a little better fps if u join from Minecraft java then Minecraft java's Singleplayer World but if u join with minecraft bedrock version then u will get less fps then minecraft bedrock's Singleplayer.
+              </span>
+          <br>
+      </div>  
     </div>
-    <div class="end box">
-        <h3>Note:</h3>
-        <ul class="n">
-        <li>
-            <span>
-                U can only join the server in minecraft bedrock/java version 1.20.2 or above.
-            </span>
-        </li>
-            <br>
-        <li>
-            <span>
-                The main server is a Java server, that means u will get same or a little better fps if u join from Minecraft java then Minecraft java's Singleplayer World but if u join with minecraft bedrock version then u will get less fps then minecraft bedrock's Singleplayer.
-            </span>
-        </li>
-        </ul>
-        <br>
-    </div>  
+    
     <div><h1 class="enjoy">Enjoy</h1></div>  
 </body>
 </html>
